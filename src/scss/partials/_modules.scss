@@ -1,1 +1,100 @@
 @include aoa-bg-series($bg__init,$classes_init);
+
+.client{
+    &-s4{
+        background-blend-mode: multiply !important;
+        background-color: #999 !important;
+    }
+}
+.service{
+    &-s1{
+        background-position: left!important;
+    }
+    &-s3{
+        background-blend-mode: multiply !important;
+        background-color: #999 !important;
+    }
+}
+.text{
+    &-shadow{
+        text-shadow: $text__shadow;
+    }
+}
+nav{
+    z-index: 10;
+}
+textarea{
+    resize:none;
+}
+@media all and (max-width: 767px){
+    .about{
+        &-s1,&-s2{
+            * {
+                color: #fff!important;
+                text-shadow: $text__shadow;
+            }
+            background-blend-mode: multiply !important;
+            background-color: #999 !important;
+        }
+        &-s1{
+            background-position: right!important;
+        }
+    }
+    .client{
+        &-s1,&-s2,&-s3{
+            * {
+                color: #fff!important;
+                text-shadow: $text__shadow;
+            }
+            background-blend-mode: multiply !important;
+            background-color: #999 !important;
+        }
+    }
+    .contact,.blog{
+        &-s1{
+            * {
+                color: #fff!important;
+                text-shadow: $text__shadow;
+            }
+            background-blend-mode: multiply !important;
+            background-color: #999 !important;
+        }
+    }
+    .index{
+        &-s1{
+            background-blend-mode: multiply !important;
+            background-color: #999 !important;
+            background-position: left!important;
+        }
+    }
+    .navbar{
+        &-toggler{
+            background-color: #555;
+            border-color: #333;
+        }
+        &-nav{
+            background-color: #555;
+            border: 1px solid #333;
+            opacity: 0.9;
+            padding: 10px
+        }
+    }
+    .product{
+        &-s1,&-s3{
+            background-position: right!important;
+        }
+    }
+    .service{
+        &-s1,&-s2{
+            * {
+                color: #fff!important;
+                text-shadow: $text__shadow;
+            }
+            background-blend-mode: multiply !important;
+            background-color: #999 !important;
+        }
+        &-s2{
+            background-position: right!important;
+        }
+    }
+}
